@@ -29,6 +29,7 @@
 		data() {
 			return {
 				selectedList: [],
+				options: [],
 				optionsModel: [],
 				lock: true
 			}
