@@ -4,14 +4,17 @@
 		<div class="footer-btn">
 			<el-button type="primary" @click="submit">提交</el-button>
 		</div>
+		<slide />
 	</div>
 </template>
 
 <script>
 	import dotType from '@/components/dot-type.vue'
+	import slide from '@/components/slide.vue'
 	export default {
 		components: {
-			dotType
+			dotType,
+			slide
 		},
 		data() {
 			return {
