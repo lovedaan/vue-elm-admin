@@ -11,7 +11,7 @@
 		<div class="result">
 			<div class="result-item" v-for="(item, index) of selectedList" :key="index">
 				<span class="label">{{item.name}}</span>
-				<el-input @change="inputChange" v-model="item.code" style="width: 200px;" placeholder="请输入证件号码"></el-input>
+				<el-input @change="inputChange" :maxlength="30" v-model="item.code" style="width: 200px;" placeholder="请输入证件号码"></el-input>
 			</div>
 		</div>
 	</div>

@@ -4,28 +4,37 @@
 		<div class="footer-btn">
 			<el-button type="primary" @click="submit">提交</el-button>
 		</div>
-		<slide />
+		<!-- <slide /> -->
 	</div>
 </template>
 
 <script>
 	import dotType from '@/components/dot-type.vue'
-	import slide from '@/components/slide.vue'
+	//import slide from '@/components/slide.vue'
 	export default {
 		components: {
 			dotType,
-			slide
+			// slide
 		},
 		data() {
 			return {
-				list: [],
-				resList: []
+				list: [], // 接口返回的已选择的证件列表
+				resList: [] // 修改后的证件列表
 			};
 		},
 		mounted() {
 			// 模拟接口返回数据
 			setTimeout(() => {
 				this.list = [{
+					id: '1',
+					name: '身份证',
+					code: '21341244'
+				}, {
+					id: '2',
+					name: '港澳通行证',
+					code: '9999999'
+				}];
+				this.resList = [{
 					id: '1',
 					name: '身份证',
 					code: '21341244'
